@@ -26,7 +26,7 @@ var ContactFormView = Backbone.View.extend({
     event.preventDefault();
 
     // var inputValues = this.$el.serializeObject;
-    this.collection.add({
+    this.collection.create({
       name: $('#new-name').val(),
       email: $('#new-email').val(),
       phone: $('#new-phone').val(),
@@ -34,10 +34,11 @@ var ContactFormView = Backbone.View.extend({
       instagram: $('#new-ig').val()
     });
 
+
     $('#new-name').val('');
     $('#new-email').val('');
     $('#new-twitter').val('');
-    $('#new-twitter').val('');
+    $('#new-phone').val('');
     $('#new-ig').val('');
   }
 

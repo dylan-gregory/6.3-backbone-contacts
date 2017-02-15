@@ -18,8 +18,49 @@ img {
 
 input{
   margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+form{
+  background-color: #EE6E73;
 }
 
 .form-control{
-  width: 50%;
+  width: 49%;
+}
+
+.header-cat{
+  text-align: center;
+  font-size: 20px;
+  background-color: #f57f17;
+  border: 2px solid #607d8b;
+  border-radius: 5px;
+  height: 60px;
+
+  span{
+    margin: 5px;
+  }
+}
+
+.contact-name{
+  text-align: center;
+}
+
+.contact-email{
+  text-align: center;
+}
+
+.contact-phone{
+  text-align: center;
+
+}
+
+.contact-twitter{
+  text-align: center;
+
+}
+
+.contact-ig{
+  text-align: center;
+
 }
