@@ -8,10 +8,11 @@ $(function(){
 
   var myContacts = new models.ContactCollection();
 
-  var myContactForm = new views.ContactFormView();
+  var myContactForm = new views.ContactFormView({collection: myContacts});
   $('.app').append(myContactForm.render().el);
 
-  
+  var contactList = new views.ContactListView({collection: myContacts});
+  $('.app').append(contactList.render().el);
 
 
 
